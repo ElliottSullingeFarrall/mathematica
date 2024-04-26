@@ -45,7 +45,7 @@
 ## 🙋 FAQ
 
 -	Q: **_"It doesn't work"_**\
-	A: I tested these themes using Mathematica 14. I am happy to look into issues that may arise in other versions but am also limited by which versions I can obtain.
+	A: I tested these themes using Mathematica 14 (Linux). I am happy to look into issues that may arise in other versions but am also limited by which versions I can obtain.
 -	Q: **_"Scrollbars look weird in Latte"_**\
   A: All themes are created with dark themed scrollbars. To revert to light themed scrollbars, simply remove all `QScrollBar` styles in `frontend.css`. 
 -	Q: **_"I don't like the colours"_**\
