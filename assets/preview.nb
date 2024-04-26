@@ -1,0 +1,65 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1588,         55]
+NotebookOptionsPosition[      1238,         41]
+NotebookOutlinePosition[      1636,         57]
+CellTagsIndexPosition[      1593,         54]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Func", "[", "x_", "]"}], ":=", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", "y", "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"y", "=", 
+       RowBox[{"Block", "[", 
+        RowBox[{
+         RowBox[{"{", "z", "}"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"Print", "[", 
+          RowBox[{"{", 
+           RowBox[{"x", ",", "y", ",", "z"}], "}"}], "]"}]}], 
+        "\[IndentingNewLine]", "]"}]}], ";"}]}], "\[IndentingNewLine]", 
+    "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.923124626554385*^9, 
+  3.9231247063131447`*^9}},ExpressionUUID->"489c401c-e2d6-4296-b3c0-\
+a98782cefdb2"]
+},
+WindowSize->{617.25, 807},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->"Catppuccin.nb",
+ExpressionUUID->"20bd75b3-22e3-4cb5-9e60-f84391afc28a"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 676, 19, 110, "Input",ExpressionUUID->"489c401c-e2d6-4296-b3c0-a98782cefdb2"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

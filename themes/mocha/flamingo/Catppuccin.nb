@@ -1,0 +1,184 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7219,        175]
+NotebookOptionsPosition[      4818,        141]
+NotebookOutlinePosition[      5157,        155]
+CellTagsIndexPosition[      5114,        152]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[StyleData[StyleDefinitions -> "ReverseColor.nb"],ExpressionUUID->"b30ec7c7-fa86-41fe-b9ab-178cdfb6d082"],
+
+Cell[CellGroupData[{
+
+Cell["General setup and variable colors", "Subsection",ExpressionUUID->"f97d1a73-7c08-465e-9cb8-6b4055311288"],
+
+Cell[StyleData["Notebook"],
+ CellBracketOptions->{
+ "HoverColor"->RGBColor[
+  0.9490196078431372, 0.803921568627451, 0.803921568627451]},
+ AutoStyleOptions->{
+ "FunctionLocalVariableStyle"->{
+  FontColor -> 
+   RGBColor[0.5372549019607843, 0.7058823529411765, 0.9803921568627451]},
+ "LocalVariableStyle"->{
+  FontColor -> 
+   RGBColor[0.4549019607843137, 0.7803921568627451, 0.9254901960784314]},
+ "PatternVariableStyle"->{
+  FontColor -> 
+   RGBColor[0.5803921568627451, 0.8862745098039215, 0.8352941176470589], 
+   FontSlant -> "Italic"},
+ "UndefinedSymbolStyle"->{
+  FontColor -> 
+   RGBColor[0.9490196078431372, 0.803921568627451, 0.803921568627451]}},
+ CodeAssistOptions->{
+ "HeadHighlightStyle"->{
+  Background -> 
+   RGBColor[0.4235294117647059, 0.4392156862745098, 0.5254901960784314], 
+   RGBColor[0.803921568627451, 0.8392156862745098, 0.9568627450980393]},
+ "MatchHighlightStyle"->{
+  Background -> 
+   RGBColor[0.9490196078431372, 0.803921568627451, 0.803921568627451], 
+   FontColor -> GrayLevel[0]},
+ "MenuBorderColor"->GrayLevel[0],
+ "MenuDarkFillColor"->GrayLevel[0],
+ "MenuDefaultFillColor"->RGBColor[
+  0.9490196078431372, 0.803921568627451, 0.803921568627451]},
+ FontColor->RGBColor[
+  0.803921568627451, 0.8392156862745098, 0.9568627450980393],
+ Background->RGBColor[
+  0.11764705882352941`, 0.11764705882352941`, 
+   0.1803921568627451],ExpressionUUID->"4ca82e82-84ac-41e3-8745-212f4b896867"],
+
+Cell[StyleData["Input"],
+ FontColor->RGBColor[
+  0.803921568627451, 0.8392156862745098, 
+   0.9568627450980393],ExpressionUUID->"227f133b-fd3c-43b7-85f8-f44b49f2ebfd"],
+
+Cell[StyleData["InitializationCell"],ExpressionUUID->"9825a595-832e-4b21-becb-1b28cbd0952e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Headers", "Subsection",ExpressionUUID->"b8b25c30-5443-4364-a252-b2f3f6280708"],
+
+Cell[StyleData["Section"],
+ FontColor->RGBColor[
+  0.9490196078431372, 0.803921568627451, 
+   0.803921568627451],ExpressionUUID->"f54e67aa-3411-4123-82dc-304c7d82d7d0"],
+
+Cell[StyleData["Subsection"],
+ FontColor->RGBColor[
+  0.5803921568627451, 0.8862745098039215, 
+   0.8352941176470589],ExpressionUUID->"c988837a-49d8-414b-98d6-76027aabd454"],
+
+Cell[StyleData["Subsubsection"],
+ FontColor->RGBColor[
+  0.4549019607843137, 0.7803921568627451, 
+   0.9254901960784314],ExpressionUUID->"1759e077-aebd-4e53-ad6b-7d0cd6da43b7"],
+
+Cell[StyleData["Item"],
+ CellDingbat->StyleBox["\[FilledSmallSquare]", 
+   RGBColor[
+   0.9490196078431372, 0.803921568627451, 
+    0.803921568627451]],ExpressionUUID->"5ad1bea2-033d-4672-9ecb-\
+aa4ec227d761"],
+
+Cell[StyleData["MessageMenuLabel"],
+ FontColor->RGBColor[
+  0.9529411764705882, 0.5450980392156862, 
+   0.6588235294117647],ExpressionUUID->"d88eee68-dab2-46c8-be1c-d80ceffec44e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Trying to make information boxes somewhat bearable", "Subsection",ExpressionUUID->"2df8ad99-cd4c-4e46-81c2-c99d21025e4c"],
+
+Cell[StyleData["InformationTitleText"],
+ FontColor->RGBColor[
+  0.9490196078431372, 0.803921568627451, 
+   0.803921568627451],ExpressionUUID->"f52de0cb-8639-41cf-b242-a4b5b73f17c8"],
+
+Cell[StyleData["InformationTitleBackground"],
+ ItemBoxOptions->{
+ Background->RGBColor[
+  0.11764705882352941`, 0.11764705882352941`, 
+   0.1803921568627451]},ExpressionUUID->"c07892e8-333a-42f1-8d38-\
+fcd92865bf91"],
+
+Cell[StyleData["InformationUsageSubtitleBackground"],
+ ItemBoxOptions->{
+ Background->RGBColor[
+  0.11764705882352941`, 0.11764705882352941`, 
+   0.1803921568627451]},ExpressionUUID->"5cc93c03-dddd-4b1e-a34f-\
+fb0a42234faf"],
+
+Cell[StyleData["InformationUsageText"],
+ FontColor->RGBColor[
+  0.803921568627451, 0.8392156862745098, 
+   0.9568627450980393],ExpressionUUID->"bcfa3401-db63-4007-968f-437d5faf20ec"],
+
+Cell[StyleData["InformationGridFrame"],
+ FrameBoxOptions->{
+ Background->RGBColor[
+  0.11764705882352941`, 0.11764705882352941`, 0.1803921568627451],
+ FrameStyle->RGBColor[
+  0.803921568627451, 0.8392156862745098, 
+   0.9568627450980393]},ExpressionUUID->"f4ce2b59-b611-480f-b8cb-\
+beca77e1ab88"]
+}, Open  ]]
+},
+FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->"PrivateStylesheetFormatting.nb",
+ExpressionUUID->"e4bbed8e-1f97-4f6c-9e22-e523cfb3415d"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 109, 0, 70, 54, 0, "StyleData", "StyleDefinitions", "",ExpressionUUID->"b30ec7c7-fa86-41fe-b9ab-178cdfb6d082"],
+Cell[CellGroupData[{
+Cell[692, 24, 110, 0, 70, "Subsection",ExpressionUUID->"f97d1a73-7c08-465e-9cb8-6b4055311288"],
+Cell[805, 26, 1413, 35, 70, 27, 0, "StyleData", "Notebook", "All",ExpressionUUID->"4ca82e82-84ac-41e3-8745-212f4b896867"],
+Cell[2221, 63, 167, 3, 70, 24, 0, "StyleData", "Input", "All",ExpressionUUID->"227f133b-fd3c-43b7-85f8-f44b49f2ebfd"],
+Cell[2391, 68, 92, 0, 70, 37, 0, "StyleData", "InitializationCell", "All",ExpressionUUID->"9825a595-832e-4b21-becb-1b28cbd0952e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2520, 73, 84, 0, 70, "Subsection",ExpressionUUID->"b8b25c30-5443-4364-a252-b2f3f6280708"],
+Cell[2607, 75, 168, 3, 70, 26, 0, "StyleData", "Section", "All",ExpressionUUID->"f54e67aa-3411-4123-82dc-304c7d82d7d0"],
+Cell[2778, 80, 173, 3, 70, 29, 0, "StyleData", "Subsection", "All",ExpressionUUID->"c988837a-49d8-414b-98d6-76027aabd454"],
+Cell[2954, 85, 176, 3, 70, 32, 0, "StyleData", "Subsubsection", "All",ExpressionUUID->"1759e077-aebd-4e53-ad6b-7d0cd6da43b7"],
+Cell[3133, 90, 209, 5, 70, 23, 0, "StyleData", "Item", "All",ExpressionUUID->"5ad1bea2-033d-4672-9ecb-aa4ec227d761"],
+Cell[3345, 97, 179, 3, 70, 35, 0, "StyleData", "MessageMenuLabel", "All",ExpressionUUID->"d88eee68-dab2-46c8-be1c-d80ceffec44e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3561, 105, 127, 0, 70, "Subsection",ExpressionUUID->"2df8ad99-cd4c-4e46-81c2-c99d21025e4c"],
+Cell[3691, 107, 181, 3, 70, 39, 0, "StyleData", "InformationTitleText", "All",ExpressionUUID->"f52de0cb-8639-41cf-b242-a4b5b73f17c8"],
+Cell[3875, 112, 216, 5, 70, 45, 0, "StyleData", "InformationTitleBackground", "All",ExpressionUUID->"c07892e8-333a-42f1-8d38-fcd92865bf91"],
+Cell[4094, 119, 224, 5, 70, 53, 0, "StyleData", "InformationUsageSubtitleBackground", "All",ExpressionUUID->"5cc93c03-dddd-4b1e-a34f-fb0a42234faf"],
+Cell[4321, 126, 182, 3, 70, 39, 0, "StyleData", "InformationUsageText", "All",ExpressionUUID->"bcfa3401-db63-4007-968f-437d5faf20ec"],
+Cell[4506, 131, 296, 7, 70, 39, 0, "StyleData", "InformationGridFrame", "All",ExpressionUUID->"f4ce2b59-b611-480f-b8cb-beca77e1ab88"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
