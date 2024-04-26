@@ -57,8 +57,8 @@
 
 ## 💝 Thanks to
 
-- [Elliott Sullinge-Farrall](https://github.com/ElliottSullingeFarrall) for creating this port.
-- [Jakob Neef](https://gitlab.com/jakobneef) for creating `maTHEMEatica`. This helped streamline the creation of the themes.
+- [Elliott Sullinge-Farrall](https://github.com/ElliottSullingeFarrall)
+- [Jakob Neef](https://gitlab.com/jakobneef)
 
 &nbsp;
 
