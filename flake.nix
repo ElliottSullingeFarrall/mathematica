@@ -1,7 +1,9 @@
 {
-  description = "Soothing pastel theme for Mathematica";
-
   inputs = {
+    snowfall-lib = {
+      url = "github:snowfallorg/lib";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nixpkgs = {
       url = "github:NixOS/nixpkgs/nixos-unstable";
     };
@@ -10,18 +12,8 @@
     };
   };
 
-  outputs = { self, ... }@inputs:
-  let
-    system = "x86_64-linux";
-
-    pkgs = import inputs.nixpkgs { inherit system; };
-  in
-  {
-    devShells.${system}.default = pkgs.mkShell {
-      packages = (with inputs.catppuccin-toolbox.packages.${pkgs.system}; [
-        catwalk
-        whiskers
-      ]);
-    };
+  outputs = inputs: inputs.snowfall-lib.mkFlake {
+    inherit inputs;
+    src = ./.;
   };
 }
